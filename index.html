@@ -1,0 +1,51 @@
+<!<!DOCTYPE html>
+<head>
+  <script src="script/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="script/bootstrap-4/css/bootstrap.min.css">
+  <style media="screen">
+    body, html {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      display: flex;
+    }
+    #display {
+      flex: 200px 0 0;
+      background: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+    #strip {
+      padding: 4px;
+      border: 2px solid #ccc;
+      background: #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #strip > div {
+      width: 4px;
+      height: 4px;
+      background: #00FF00;
+      border-radius: 50%;
+    }
+    #controls {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="display">
+    <div id="strip">
+    </div>
+  </div>
+  <div id="controls">
+    <button type="button" id="toggle-wave" class="btn btn-default">Toggle wave</button>
+    <button type="button" id="pause" class="btn btn-default">Pause</button>
+  </div>
+  <script src="script/app.js" charset="utf-8"></script>
+</body>
